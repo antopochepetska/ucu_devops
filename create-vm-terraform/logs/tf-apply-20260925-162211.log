@@ -1,0 +1,17 @@
+### terraform apply
+### started 2026-09-25T15:22:11Z
+### user: staytuned terraform: Terraform v1.16.3
+
+google_compute_instance.vm_instance: Creating...
+google_compute_instance.vm_instance: Still creating... [00m10s elapsed]
+google_compute_instance.vm_instance: Creation complete after 12s [id=projects/REDACTED_PROJECT_ID/zones/europe-west2-c/instances/REDACTED_VM_NAME]
+
+Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
+
+Outputs:
+
+bucket_url = "gs://REDACTED_BUCKET_NAME"
+dataset_id = "project_dataset"
+vm_internal_ip = "REDACTED_INTERNAL_IP"
+-e 
+### finished 2026-09-25T15:22:26Z

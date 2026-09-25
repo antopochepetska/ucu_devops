@@ -1,0 +1,460 @@
+### terraform destroy
+### started 2026-09-25T15:31:16Z
+### user: staytuned terraform: Terraform v1.16.3
+
+random_id.bucket_suffix: Refreshing state... [id=mnNohg]
+random_id.bucket_suffix: Refreshing state... [id=mnNohg]
+google_storage_bucket.project_bucket: Refreshing state... [id=REDACTED_BUCKET_NAME]
+google_storage_bucket.project_bucket: Refreshing state... [id=REDACTED_BUCKET_NAME]
+google_bigquery_dataset.project_dataset: Refreshing state... [id=projects/REDACTED_PROJECT_ID/datasets/project_dataset]
+google_bigquery_dataset.project_dataset: Refreshing state... [id=projects/REDACTED_PROJECT_ID/datasets/project_dataset]
+google_compute_instance.vm_instance: Refreshing state... [id=projects/REDACTED_PROJECT_ID/zones/europe-west2-c/instances/REDACTED_VM_NAME]
+google_compute_instance.vm_instance: Refreshing state... [id=projects/REDACTED_PROJECT_ID/zones/europe-west2-c/instances/REDACTED_VM_NAME]
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  - destroy
+
+Terraform will perform the following actions:
+
+  # google_bigquery_dataset.project_dataset will be destroyed
+  - resource "google_bigquery_dataset" "project_dataset" {
+      - creation_time                   = 1790349604119 -> null
+      - dataset_id                      = "project_dataset" -> null
+      - default_partition_expiration_ms = 0 -> null
+      - default_table_expiration_ms     = 0 -> null
+      - delete_contents_on_destroy      = false -> null
+      - description                     = "Dataset created for app and analytics workloads" -> null
+      - effective_labels                = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - etag                            = "lZvI4IeRsTDg2fmE+czGag==" -> null
+      - friendly_name                   = "Project Dataset" -> null
+      - id                              = "projects/REDACTED_PROJECT_ID/datasets/project_dataset" -> null
+      - is_case_insensitive             = false -> null
+      - labels                          = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - last_modified_time              = 1790349604119 -> null
+      - location                        = "US" -> null
+      - max_time_travel_hours           = "168" -> null
+      - project                         = "REDACTED_PROJECT_ID" -> null
+      - resource_tags                   = {} -> null
+      - self_link                       = "https://bigquery.googleapis.com/bigquery/v2/projects/REDACTED_PROJECT_ID/datasets/project_dataset" -> null
+      - terraform_labels                = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+        # (2 unchanged attributes hidden)
+
+      - access {
+          - role           = "OWNER" -> null
+          - user_by_email  = "REDACTED_PROJECT_IDXXXX@XXX" -> null
+            # (4 unchanged attributes hidden)
+        }
+      - access {
+          - role           = "OWNER" -> null
+          - special_group  = "projectOwners" -> null
+            # (4 unchanged attributes hidden)
+        }
+      - access {
+          - role           = "READER" -> null
+          - special_group  = "projectReaders" -> null
+            # (4 unchanged attributes hidden)
+        }
+      - access {
+          - role           = "WRITER" -> null
+          - special_group  = "projectWriters" -> null
+            # (4 unchanged attributes hidden)
+        }
+    }
+
+  # google_bigquery_dataset.project_dataset will be destroyed
+  - resource "google_bigquery_dataset" "project_dataset" {
+      - creation_time                   = 1790349604119 -> null
+      - dataset_id                      = "project_dataset" -> null
+      - default_partition_expiration_ms = 0 -> null
+      - default_table_expiration_ms     = 0 -> null
+      - delete_contents_on_destroy      = false -> null
+      - description                     = "Dataset created for app and analytics workloads" -> null
+      - effective_labels                = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - etag                            = "lZvI4IeRsTDg2fmE+czGag==" -> null
+      - friendly_name                   = "Project Dataset" -> null
+      - id                              = "projects/REDACTED_PROJECT_ID/datasets/project_dataset" -> null
+      - is_case_insensitive             = false -> null
+      - labels                          = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - last_modified_time              = 1790349604119 -> null
+      - location                        = "US" -> null
+      - max_time_travel_hours           = "168" -> null
+      - project                         = "REDACTED_PROJECT_ID" -> null
+      - resource_tags                   = {} -> null
+      - self_link                       = "https://bigquery.googleapis.com/bigquery/v2/projects/REDACTED_PROJECT_ID/datasets/project_dataset" -> null
+      - terraform_labels                = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+        # (2 unchanged attributes hidden)
+
+      - access {
+          - role           = "OWNER" -> null
+          - user_by_email  = "REDACTED_PROJECT_IDXXX@XXX" -> null
+            # (4 unchanged attributes hidden)
+        }
+      - access {
+          - role           = "OWNER" -> null
+          - special_group  = "projectOwners" -> null
+            # (4 unchanged attributes hidden)
+        }
+      - access {
+          - role           = "READER" -> null
+          - special_group  = "projectReaders" -> null
+            # (4 unchanged attributes hidden)
+        }
+      - access {
+          - role           = "WRITER" -> null
+          - special_group  = "projectWriters" -> null
+            # (4 unchanged attributes hidden)
+        }
+    }
+
+  # google_compute_instance.vm_instance will be destroyed
+  - resource "google_compute_instance" "vm_instance" {
+      - can_ip_forward       = false -> null
+      - cpu_platform         = "Intel Broadwell" -> null
+      - current_status       = "RUNNING" -> null
+      - deletion_protection  = false -> null
+      - effective_labels     = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - enable_display       = false -> null
+      - guest_accelerator    = [] -> null
+      - id                   = "projects/REDACTED_PROJECT_ID/zones/europe-west2-c/instances/REDACTED_VM_NAME" -> null
+      - instance_id          = "REDACTED_INSTANCE_ID" -> null
+      - label_fingerprint    = "_Pci06ssKLM=" -> null
+      - labels               = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - machine_type         = "e2-standard-2" -> null
+      - metadata             = {} -> null
+      - metadata_fingerprint = "-W5AfmMHGuc=" -> null
+      - name                 = "REDACTED_VM_NAME" -> null
+      - project              = "REDACTED_PROJECT_ID" -> null
+      - resource_policies    = [] -> null
+      - self_link            = "https://www.googleapis.com/compute/v1/projects/REDACTED_PROJECT_ID/zones/europe-west2-c/instances/REDACTED_VM_NAME" -> null
+      - tags                 = [
+          - "devops-course",
+          - "ssh",
+        ] -> null
+      - tags_fingerprint     = "bPNY2gaTSIc=" -> null
+      - terraform_labels     = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - zone                 = "europe-west2-c" -> null
+        # (3 unchanged attributes hidden)
+
+      - boot_disk {
+          - auto_delete                = true -> null
+          - device_name                = "persistent-disk-0" -> null
+          - mode                       = "READ_WRITE" -> null
+          - source                     = "https://www.googleapis.com/compute/v1/projects/REDACTED_PROJECT_ID/zones/europe-west2-c/disks/REDACTED_VM_NAME" -> null
+            # (3 unchanged attributes hidden)
+
+          - initialize_params {
+              - enable_confidential_compute = false -> null
+              - image                       = "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/debian-12-bookworm-v20260921" -> null
+              - labels                      = {} -> null
+              - provisioned_iops            = 0 -> null
+              - provisioned_throughput      = 0 -> null
+              - resource_manager_tags       = {} -> null
+              - size                        = 10 -> null
+              - type                        = "pd-standard" -> null
+                # (1 unchanged attribute hidden)
+            }
+        }
+
+      - network_interface {
+          - internal_ipv6_prefix_length = 0 -> null
+          - name                        = "nic0" -> null
+          - network                     = "https://www.googleapis.com/compute/v1/projects/REDACTED_NETWORK_URL" -> null
+          - network_ip                  = "REDACTED_INTERNAL_IP" -> null
+          - queue_count                 = 0 -> null
+          - stack_type                  = "IPV4_ONLY" -> null
+          - subnetwork                  = "https://www.googleapis.com/compute/v1/projects/REDACTED_SUBNET_URL" -> null
+          - subnetwork_project          = "REDACTED_PROJECT_ID" -> null
+            # (3 unchanged attributes hidden)
+
+          - access_config {
+              - nat_ip                 = "XX.XX.XX.XX" -> null
+              - network_tier           = "PREMIUM" -> null
+                # (1 unchanged attribute hidden)
+            }
+        }
+
+      - scheduling {
+          - automatic_restart           = true -> null
+          - min_node_cpus               = 0 -> null
+          - on_host_maintenance         = "MIGRATE" -> null
+          - preemptible                 = false -> null
+          - provisioning_model          = "STANDARD" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - shielded_instance_config {
+          - enable_integrity_monitoring = true -> null
+          - enable_secure_boot          = false -> null
+          - enable_vtpm                 = true -> null
+        }
+    }
+
+  # google_storage_bucket.project_bucket will be destroyed
+  - resource "google_storage_bucket" "project_bucket" {
+      - default_event_based_hold    = false -> null
+      - effective_labels            = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - enable_object_retention     = false -> null
+      - force_destroy               = true -> null
+      - id                          = "REDACTED_BUCKET_NAME" -> null
+      - labels                      = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - location                    = "EUROPE-WEST2" -> null
+      - name                        = "REDACTED_BUCKET_NAME" -> null
+      - project                     = "REDACTED_PROJECT_ID" -> null
+      - project_number              = REDACTED_PROJECT_ID -> null
+      - public_access_prevention    = "enforced" -> null
+      - requester_pays              = false -> null
+      - self_link                   = "https://www.googleapis.com/storage/v1/b/REDACTED_BUCKET_NAME" -> null
+      - storage_class               = "STANDARD" -> null
+      - terraform_labels            = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - uniform_bucket_level_access = true -> null
+      - url                         = "gs://REDACTED_BUCKET_NAME" -> null
+
+      - soft_delete_policy {
+          - effective_time             = "2026-09-25T15:20:04.274Z" -> null
+          - retention_duration_seconds = 604800 -> null
+        }
+    }
+
+  # random_id.bucket_suffix will be destroyed
+  - resource "random_id" "bucket_suffix" {
+      - b64_std     = "mnNohg==" -> null
+      - b64_url     = "mnNohg" -> null
+      - byte_length = 4 -> null
+      - dec         = "2591254662" -> null
+      - hex         = "REDACTED_SUFFIX" -> null
+      - id          = "mnNohg" -> null
+    }
+
+Plan: 0 to add, 0 to change, 4 to destroy.
+
+Changes to Outputs:
+  - bucket_url     = "gs://REDACTED_BUCKET_NAME" -> null
+  - dataset_id     = "project_dataset" -> null
+  - vm_internal_ip = "XX.XX.XX.XX" -> null
+
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: 
+  # google_compute_instance.vm_instance will be destroyed
+  - resource "google_compute_instance" "vm_instance" {
+      - can_ip_forward       = false -> null
+      - cpu_platform         = "Intel Broadwell" -> null
+      - current_status       = "RUNNING" -> null
+      - deletion_protection  = false -> null
+      - effective_labels     = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - enable_display       = false -> null
+      - guest_accelerator    = [] -> null
+      - id                   = "projects/REDACTED_PROJECT_ID/zones/europe-west2-c/instances/REDACTED_VM_NAME" -> null
+      - instance_id          = "REDACTED_INSTANCE_ID" -> null
+      - label_fingerprint    = "_Pci06ssKLM=" -> null
+      - labels               = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - machine_type         = "e2-standard-2" -> null
+      - metadata             = {} -> null
+      - metadata_fingerprint = "-W5AfmMHGuc=" -> null
+      - name                 = "REDACTED_VM_NAME" -> null
+      - project              = "REDACTED_PROJECT_ID" -> null
+      - resource_policies    = [] -> null
+      - self_link            = "https://www.googleapis.com/compute/v1/projects/REDACTED_PROJECT_ID/zones/europe-west2-c/instances/REDACTED_VM_NAME" -> null
+      - tags                 = [
+          - "devops-course",
+          - "ssh",
+        ] -> null
+      - tags_fingerprint     = "bPNY2gaTSIc=" -> null
+      - terraform_labels     = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - zone                 = "europe-west2-c" -> null
+        # (3 unchanged attributes hidden)
+
+      - boot_disk {
+          - auto_delete                = true -> null
+          - device_name                = "persistent-disk-0" -> null
+          - mode                       = "READ_WRITE" -> null
+          - source                     = "https://www.googleapis.com/compute/v1/projects/REDACTED_PROJECT_ID/zones/europe-west2-c/disks/REDACTED_VM_NAME" -> null
+            # (3 unchanged attributes hidden)
+
+          - initialize_params {
+              - enable_confidential_compute = false -> null
+              - image                       = "https://www.googleapis.com/compute/v1/projects/debian-cloud/global/images/debian-12-bookworm-v20260921" -> null
+              - labels                      = {} -> null
+              - provisioned_iops            = 0 -> null
+              - provisioned_throughput      = 0 -> null
+              - resource_manager_tags       = {} -> null
+              - size                        = 10 -> null
+              - type                        = "pd-standard" -> null
+                # (1 unchanged attribute hidden)
+            }
+        }
+
+      - network_interface {
+          - internal_ipv6_prefix_length = 0 -> null
+          - name                        = "nic0" -> null
+          - network                     = "https://www.googleapis.com/compute/v1/projects/REDACTED_NETWORK_URL" -> null
+          - network_ip                  = "REDACTED_INTERNAL_IP" -> null
+          - queue_count                 = 0 -> null
+          - stack_type                  = "IPV4_ONLY" -> null
+          - subnetwork                  = "https://www.googleapis.com/compute/v1/projects/REDACTED_SUBNET_URL" -> null
+          - subnetwork_project          = "REDACTED_PROJECT_ID" -> null
+            # (3 unchanged attributes hidden)
+
+          - access_config {
+              - nat_ip                 = "XX.XX.XX.XX" -> null
+              - network_tier           = "PREMIUM" -> null
+                # (1 unchanged attribute hidden)
+            }
+        }
+
+      - scheduling {
+          - automatic_restart           = true -> null
+          - min_node_cpus               = 0 -> null
+          - on_host_maintenance         = "MIGRATE" -> null
+          - preemptible                 = false -> null
+          - provisioning_model          = "STANDARD" -> null
+            # (1 unchanged attribute hidden)
+        }
+
+      - shielded_instance_config {
+          - enable_integrity_monitoring = true -> null
+          - enable_secure_boot          = false -> null
+          - enable_vtpm                 = true -> null
+        }
+    }
+
+  # google_storage_bucket.project_bucket will be destroyed
+  - resource "google_storage_bucket" "project_bucket" {
+      - default_event_based_hold    = false -> null
+      - effective_labels            = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - enable_object_retention     = false -> null
+      - force_destroy               = true -> null
+      - id                          = "REDACTED_BUCKET_NAME" -> null
+      - labels                      = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - location                    = "EUROPE-WEST2" -> null
+      - name                        = "REDACTED_BUCKET_NAME" -> null
+      - project                     = "REDACTED_PROJECT_ID" -> null
+      - project_number              = REDACTED_PROJECT_ID -> null
+      - public_access_prevention    = "enforced" -> null
+      - requester_pays              = false -> null
+      - self_link                   = "https://www.googleapis.com/storage/v1/b/REDACTED_BUCKET_NAME" -> null
+      - storage_class               = "STANDARD" -> null
+      - terraform_labels            = {
+          - "environment" = "dev"
+          - "managed_by"  = "terraform"
+        } -> null
+      - uniform_bucket_level_access = true -> null
+      - url                         = "gs://REDACTED_BUCKET_NAME" -> null
+
+      - soft_delete_policy {
+          - effective_time             = "2026-09-25T15:20:04.274Z" -> null
+          - retention_duration_seconds = 604800 -> null
+        }
+    }
+
+  # random_id.bucket_suffix will be destroyed
+  - resource "random_id" "bucket_suffix" {
+      - b64_std     = "mnNohg==" -> null
+      - b64_url     = "mnNohg" -> null
+      - byte_length = 4 -> null
+      - dec         = "2591254662" -> null
+      - hex         = "REDACTED_SUFFIX" -> null
+      - id          = "mnNohg" -> null
+    }
+
+Plan: 0 to add, 0 to change, 4 to destroy.
+
+Changes to Outputs:
+  - bucket_url     = "gs://REDACTED_BUCKET_NAME" -> null
+  - dataset_id     = "project_dataset" -> null
+  - vm_internal_ip = " XX.XX.XX.XX" -> null
+
+Do you really want to destroy all resources?
+  Terraform will destroy all your managed infrastructure, as shown above.
+  There is no undo. Only 'yes' will be accepted to confirm.
+
+  Enter a value: 
+
+google_storage_bucket.project_bucket: Destroying... [id=REDACTED_BUCKET_NAME]
+google_storage_bucket.project_bucket: Destroying... [id=REDACTED_BUCKET_NAME]
+google_bigquery_dataset.project_dataset: Destroying... [id=projects/REDACTED_PROJECT_ID/datasets/project_dataset]
+google_bigquery_dataset.project_dataset: Destroying... [id=projects/REDACTED_PROJECT_ID/datasets/project_dataset]
+google_compute_instance.vm_instance: Destroying... [id=projects/REDACTED_PROJECT_ID/zones/europe-west2-c/instances/REDACTED_VM_NAME]
+google_compute_instance.vm_instance: Destroying... [id=projects/REDACTED_PROJECT_ID/zones/europe-west2-c/instances/REDACTED_VM_NAME]
+google_bigquery_dataset.project_dataset: Destruction complete after 1s
+google_bigquery_dataset.project_dataset: Destruction complete after 1s
+google_storage_bucket.project_bucket: Destruction complete after 1s
+google_storage_bucket.project_bucket: Destruction complete after 1s
+random_id.bucket_suffix: Destroying... [id=mnNohg]
+random_id.bucket_suffix: Destroying... [id=mnNohg]
+random_id.bucket_suffix: Destruction complete after 0s
+random_id.bucket_suffix: Destruction complete after 0s
+google_compute_instance.vm_instance: Still destroying... [id=projects/REDACTED_PROJECT_ID/zones/europe-west2-c/instances/REDACTED_VM_NAME, 00m10s elapsed]
+google_compute_instance.vm_instance: Still destroying... [id=projects/REDACTED_PROJECT_ID/zones/europe-west2-c/instances/REDACTED_VM_NAME, 00m10s elapsed]
+google_compute_instance.vm_instance: Still destroying... [id=projects/REDACTED_PROJECT_ID/zones/europe-west2-c/instances/REDACTED_VM_NAME, 00m20s elapsed]
+google_compute_instance.vm_instance: Still destroying... [id=projects/REDACTED_PROJECT_ID/zones/europe-west2-c/instances/REDACTED_VM_NAME, 00m20s elapsed]
+google_compute_instance.vm_instance: Destruction complete after 21s
+google_compute_instance.vm_instance: Destruction complete after 21s
+Releasing state lock. This may take a few moments...
+Releasing state lock. This may take a few moments...
+
+Destroy complete! Resources: 4 destroyed.
+
+Destroy complete! Resources: 4 destroyed.
+-e 
+### finished 2026-09-25T15:31:52Z

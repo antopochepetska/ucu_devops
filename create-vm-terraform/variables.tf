@@ -2,18 +2,19 @@
 variable "project_id" {
   description = "Project ID to create resources in."
   type        = string
+  default     = "devops-test-vm-terraform"
 }
 
 variable "region" {
   description = "Region to place compute resources at."
   type        = string
-  default     = "us-central1"
+  default     = "europe-west2"
 }
 
 variable "zone" {
   description = "Zone to place compute resource at."
   type        = string
-  default     = "us-central1-c"
+  default     = "europe-west2-c"
 }
 
 variable "network" {
@@ -37,5 +38,5 @@ variable "machine_type" {
 variable "machine_name" {
   description = "Compute Instance name."
   type        = string
-  default     = "test-vm"
+  default     = "devops-test-vm"
 }
