@@ -216,3 +216,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Terraform provider binaries (downloaded by terraform init)
+**/.terraform/providers/
